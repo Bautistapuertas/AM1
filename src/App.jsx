@@ -149,9 +149,9 @@ const ExerciseCard = ({ ej, idx, renderMathText }) => {
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm w-full">
-      <div className={\`\${isExample ? 'bg-gradient-to-r from-blue-50 to-white' : 'bg-gradient-to-r from-emerald-50 to-white'} px-4 md:px-5 py-3 border-b border-gray-200 flex items-center\`}>
-        <span className={\`\${isExample ? 'bg-blue-100 text-blue-800' : 'bg-emerald-100 text-emerald-800'} text-[10px] md:text-xs font-bold px-2 py-1 rounded uppercase tracking-wider mr-3 flex-shrink-0\`}>
-          {isExample ? 'Ejemplo' : \`Ejercicio \${idx}\`}
+      <div className={`${isExample ? 'bg-gradient-to-r from-blue-50 to-white' : 'bg-gradient-to-r from-emerald-50 to-white'} px-4 md:px-5 py-3 border-b border-gray-200 flex items-center`}>
+        <span className={`${isExample ? 'bg-blue-100 text-blue-800' : 'bg-emerald-100 text-emerald-800'} text-[10px] md:text-xs font-bold px-2 py-1 rounded uppercase tracking-wider mr-3 flex-shrink-0`}>
+          {isExample ? 'Ejemplo' : `Ejercicio ${idx}`}
         </span>
         {ej.dificultad && (
           <span className="text-gray-500 text-xs font-semibold mr-3 bg-gray-100 px-2 py-1 rounded uppercase tracking-wider">{ej.dificultad}</span>
