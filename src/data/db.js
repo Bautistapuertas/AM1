@@ -187,6 +187,8 @@ El límite general no existe porque pasa alguna de estas dos cosas:
 ### 3. Continuidad vs. Derivabilidad
 El Teorema indica que **"Derivabilidad implica Continuidad"**. Si una función es suave y se puede derivar en un punto, seguro es de un solo trazo en ese punto. 
 Sin embargo, **"Continuidad NO implica Derivabilidad"**. Una función puede ser continua pero tener un "pico" o "punta" (como $f(x) = |x|$ en $x=0$). En los picos, las derivadas laterales no coinciden, por lo que la derivada no existe.
+
+[GRAFICO:Continuidad]
     `,
     practica: [
       {
@@ -330,6 +332,8 @@ Es una generalización de Rolle (no exige que $f(a)=f(b)$). Rolle es de hecho un
 Existe al menos un punto $c \\in (a, b)$ tal que la derivada en ese punto iguala la pendiente de la recta secante que une los extremos del intervalo:
 $$ f'(c) = \\frac{f(b) - f(a)}{b - a} $$
 *Interpretación geométrica:* Hay un punto en la curva donde la recta tangente es exactamente paralela a la recta que corta los extremos A y B.
+
+[GRAFICO:Teoremas]
 
 ### 3. Regla de L'Hôpital
 Es un teorema espectacular para resolver límites.
@@ -483,6 +487,8 @@ Todo el problema debe estar expresado obligatoriamente en función de la variabl
 2. Los límites $a$ y $b$ ahora se buscan analizando los cortes en el eje $y$ vertical.
 3. La integral se hace respecto a $dy$.
 $$ V = \\pi \\int_c^d [f(y)]^2 dy $$
+
+[GRAFICO:Integrales]
     `,
     practica: [
       {

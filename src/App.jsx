@@ -4,7 +4,7 @@ import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 
 import { temas } from './data/db';
-import { ContinuityVisualizer } from './components/MathGraphs';
+import { ContinuityVisualizer, TheoremsVisualizer, IntegralsVisualizer } from './components/MathGraphs';
 import DesmosCalculator from './components/DesmosCalculator';
 
 const iconsMap = {
@@ -234,6 +234,9 @@ export default function App() {
       if (line.startsWith('### ')) return <h3 key={i} className="text-lg md:text-xl font-bold text-blue-900 mt-6 mb-3 leading-tight">{line.replace('### ', '')}</h3>;
       if (line.startsWith('#### ')) return <h4 key={i} className="text-md md:text-lg font-bold text-blue-800 mt-5 mb-2 leading-tight">{line.replace('#### ', '')}</h4>;
       
+      if (line.startsWith('[GRAFICO:Continuidad]')) return <ContinuityVisualizer key={i} />;
+      if (line.startsWith('[GRAFICO:Teoremas]')) return <TheoremsVisualizer key={i} />;
+      if (line.startsWith('[GRAFICO:Integrales]')) return <IntegralsVisualizer key={i} />;
       let isUnorderedList = line.startsWith('- ');
       let isOrderedList = /^[1-9]\. /.test(line);
       
