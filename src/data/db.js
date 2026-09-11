@@ -37,6 +37,8 @@ Al evaluar un límite, si el resultado no es un número directo (ej: $5/0 = \\in
 4. **$1^\\infty$, $0^0$, $\\infty^0$:**
    - Se usa el logaritmo natural para bajar el exponente:
    $$ \\lim f(x)^{g(x)} = y \\implies \\ln(y) = \\lim [ g(x) \\cdot \\ln(f(x)) ] $$
+
+[GRAFICO:Limites]
     `,
     practica: [
       {
@@ -115,6 +117,8 @@ Es el método más importante, usado para **funciones compuestas**. Se deriva "d
 $$ [f(g(x))]' = f'(g(x)) \\cdot g'(x) $$
 *Ejemplo clásico:* Si $y = \\sin(3x^2)$, la función exterior es el seno, la interior es el polinomio.
 $$ y' = \\cos(3x^2) \\cdot (6x) $$
+
+[GRAFICO:Derivadas]
     `,
     practica: [
       {
@@ -265,6 +269,8 @@ Se deben excluir los valores de $x$ que "rompan" la matemática:
    - Si $f''(x) > 0 \\implies$ Cóncava hacia arriba (Forma de U).
    - Si $f''(x) < 0 \\implies$ Cóncava hacia abajo (Forma de montaña).
 3. Si la concavidad cambia de signo alrededor de un punto, ese es un **Punto de Inflexión**.
+
+[GRAFICO:Estudio]
     `,
     practica: [
       {
